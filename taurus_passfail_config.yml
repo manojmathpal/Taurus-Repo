@@ -7,4 +7,4 @@ services:
     subject: local/cpu
     condition: '>'
     threshold: 10
-    timeframe: 7s
+    timeframe: 8s
