@@ -1,0 +1,10 @@
+---
+services:
+- module: passfail
+  criteria:
+  - class: bzt.modules.monitoring.MonitoringCriteria
+    My Message: CPU on local server>20 for 7s, stop as failed
+    subject: local/cpu
+    condition: '>'
+    threshold: 10
+    timeframe: 7s

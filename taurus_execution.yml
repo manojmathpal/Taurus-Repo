@@ -1,0 +1,9 @@
+---
+execution:
+   concurrency: 10
+   hold-for: 5m
+   ramp-up: 1m
+   scenario:
+      requests:
+         - url: http://blazedemo.com/
+           method: GET
