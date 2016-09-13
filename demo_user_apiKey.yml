@@ -3,3 +3,4 @@ modules:
   blazemeter:
     token: 0UmwdOJj7v85Z5fOsbt4
     test: BlazeDemo Test
+    project: My Project
