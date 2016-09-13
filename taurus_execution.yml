@@ -1,7 +1,7 @@
 ---
 execution:
    concurrency: 10
-   hold-for: 5m
+   hold-for: 6m
    ramp-up: 1m
    scenario:
       requests:
