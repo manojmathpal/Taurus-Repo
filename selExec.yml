@@ -1,0 +1,9 @@
+---
+execution:
+- executor: selenium
+  scenario:
+    script: test_python_taurus.py
+  concurrency: 1
+  ramp-up: 15s
+  hold-for: 2m
+  iterations: 100
