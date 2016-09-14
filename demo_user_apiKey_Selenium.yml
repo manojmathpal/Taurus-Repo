@@ -1,0 +1,6 @@
+---
+modules:
+  blazemeter:
+    token: 0UmwdOJj7v85Z5fOsbt4
+    test: Jenkins Selenium Test
+    project: Selenium Project
