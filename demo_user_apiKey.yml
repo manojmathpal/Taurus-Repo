@@ -1,6 +1,6 @@
 ---
 modules:
   blazemeter:
-    token: 0UmwdOJj7v85Z5fOsbt4
+    token: 998a2fe7d26be746fd8a
     test: Jenkins Taurus Test
     project: My Project
