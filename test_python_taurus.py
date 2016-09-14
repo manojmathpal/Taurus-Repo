@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoAlertPresentException
 
 class TestRequests(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         self.driver.get("about:blank")
         self.driver.implicitly_wait(10.0)
         self.driver.maximize_window()
