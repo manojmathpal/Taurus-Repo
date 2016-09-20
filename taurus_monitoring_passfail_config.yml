@@ -3,8 +3,8 @@ services:
 - module: passfail
   criterias:
   - class: bzt.modules.monitoring.MonitoringCriteria
-    My Message: CPU on local server>7 for 16s, stop as failed
+    My Message: CPU on local server>8 for 16s, stop as failed
     subject: local/cpu
     condition: '>'
-    threshold: 7
+    threshold: 8
     timeframe: 16s
