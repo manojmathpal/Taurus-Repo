@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1473815528000</longProp>
+        <longProp name="ThreadGroup.end_time">1473815528000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/app" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/web/active?projectId=-1&amp;view_as=300779&amp;_=1473805641297" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/user/tests?view_as=300779&amp;sort%5B%5D=-updated&amp;limit=5&amp;_=1473805641298" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/user/collections?view_as=300779&amp;sort%5B%5D=-updated&amp;limit=5&amp;_=1473805641299" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/user/masters?view_as=300779&amp;sort%5B%5D=-updated&amp;limit=5&amp;_=1473805641300" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/user/opl-locations?view_as=300779&amp;sort%5B%5D=-updated&amp;_=1473805641301" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/user?_=1473815290633" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+        <kg.apc.jmeter.samplers.DummySampler guiclass="kg.apc.jmeter.samplers.DummySamplerGui" testclass="kg.apc.jmeter.samplers.DummySampler" testname="https://a.blazemeter.com/api/latest/web/active?projectId=42105&amp;_=1473815290642" enabled="true">
+          <boolProp name="WAITING">true</boolProp>
+          <boolProp name="SUCCESFULL">true</boolProp>
+          <stringProp name="RESPONSE_CODE">200</stringProp>
+          <stringProp name="RESPONSE_MESSAGE">OK</stringProp>
+          <stringProp name="REQUEST_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_DATA">Dummy Sampler used to simulate requests and responses
+without actual network activity. This helps debugging tests.</stringProp>
+          <stringProp name="RESPONSE_TIME">${__Random(50,500)}</stringProp>
+          <stringProp name="LATENCY">${__Random(1,50)}</stringProp>
+          <stringProp name="CONNECT">${__Random(1,5)}</stringProp>
+        </kg.apc.jmeter.samplers.DummySampler>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
