@@ -1,0 +1,16 @@
+---
+execution:
+- concurrency: 1000
+  hold-for: 30m
+  ramp-up: 5m
+  locations:
+    us-east-1: 1
+    us-west-1: 1
+    us-west-2: 1
+    eu-west-1: 1
+    eu-central-1: 1
+  scenario: full test
+scenarios:
+  full test:
+    script: Full_User_Flow.jmx
+    script: backend_api_calls.jmx
