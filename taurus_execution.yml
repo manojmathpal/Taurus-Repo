@@ -1,8 +1,8 @@
 ---
 execution:
    concurrency: 20
-   hold-for: 60s
-   ramp-up: 10s
+   hold-for: 7m
+   ramp-up: 60s
    scenario:
       requests:
          - url: http://blazedemo.com/
